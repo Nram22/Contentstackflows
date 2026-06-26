@@ -1,0 +1,17 @@
+{
+  "source_content_type": "web_page",
+  "target_content_type": "web_page_v2",
+  "url_field": "url",
+  "copy_unmapped": false,
+  "drop_fields": [],
+  "required_target_fields": ["title", "url"],
+  "fields": [
+    { "source": "title", "target": "title" },
+    { "source": "url", "target": "url" },
+    { "source": "body", "target": "body" },
+    { "source": "seo", "target": "seo" },
+    { "source": "hero_image", "target": "hero_image", "transform": "asset" },
+    { "source": "related_pages", "target": "related_pages", "transform": "reference" },
+    { "target": "migrated_from", "transform": "constant", "value": "web_page" }
+  ]
+}
